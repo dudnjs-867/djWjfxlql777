@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>청소당번 추첨기</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Tailwind via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- SweetAlert2 -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gradient-to-br from-blue-100 to-indigo-100 min-h-screen flex items-center justify-center">
+
+  <div class="container text-center bg-white p-5 rounded-3 shadow-lg max-w-md w-full">
+    <h1 class="text-3xl font-bold text-indigo-700 mb-3">✨ 청소당번을 뽑아봐요!</h1>
+    <p class="text-gray-600 mb-4">1번부터 25번 중 4명을 무작위로 뽑아요!</p>
+    <button onclick="pickRandom()" class="btn btn-primary w-100 text-lg py-2">
+      당번 뽑기
+    </button>
+    <div id="result" class="mt-4 text-indigo-800 font-semibold text-xl"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
